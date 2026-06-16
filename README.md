@@ -1,2 +1,2 @@
 # Infinite-Vision
-IY but better
+An IY Plugin

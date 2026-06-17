@@ -1,0 +1,27 @@
+-- InfiniteVision Plugin
+
+local Plugin = {
+    ["PluginName"] = "IV",
+    ["PluginDescription"] = "Basically a IY plugin.",
+    ["Commands"] = {
+        ["ivtest"] = {
+            ["ListName"] = "IVT [text]",
+            ["Description"] = "Outputs text to the Roblox console",
+            ["Aliases"] = {"IVP", "vt", "IVT"},
+            ["Function"] = function(args, speaker)
+                print(getstring(1, args))
+            end
+        },
+
+        ["ivh"] = {
+            ["ListName"] = "IVH",
+            ["Description"] = "Opens IV Hub (Best hub out there)",
+            ["Aliases"] = {"hub"},
+            ["Function"] = function(args, speaker)
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/real-vision/IVH/refs/heads/main/src.lua"))()
+            end
+        }
+    }
+}
+
+return Plugin
